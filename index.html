@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<head>
+    <title>Home | Blake Thiessen</title>
+    <meta charset="utf-8">
+    <link rel=StyleSheet href="style.css">
+    <!--<script src="jquery.js"></script>-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="scripts/quadrantAnimation.js"></script>
+    <script src="scripts/colorSchemeGenerator.js"></script>
+    <script src="scripts/main.js"></script>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-37682240-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+        <h2 id="topLeftHeader">Games</h2>
+        <h2 id="topRightHeader">Music</h2>
+        <h2 id="bottomLeftHeader">Swing</h2>
+        <h2 id="bottomRightHeader">Me</h2>
+        <div id="topLeftCover" class="quadrant quadrantCover"></div>
+        <div id="topRightCover" class="quadrant quadrantCover topRight"></div>
+        <div id="bottomLeftCover" class="quadrant quadrantCover bottomLeft"></div>
+        <div id="bottomRightCover" class="quadrant quadrantCover bottomRight"></div>
+
+        <div id="topLeftContent" class="quadrantContent">
+            <div id="godFighterQuadrant" class="quadrant subQuadrant topRight">
+                <div class="gameTitleBlock">
+                    <img src="images/godFighter-logo.png" class="gameLogo">
+                    <div>
+                        <h3 class="gameSubTitle">3 vs 1 Competitive Sidescroller</h3>
+                    </div>
+                </div>
+                <a target="_blank" href="games/GodFighter%2011-9-12.zip" class="gameLaunchButton" style="margin-left: -40px">Download</a>
+                <a target="_blank" href="http://www.youtube.com/watch?v=ON8ILv4s8V4" class="gameVideoButton">Video</a>
+                <div class="textBoxWrapper">
+                    <p class="textBox">
+                        3 Runners, each armed with unique abilities, must team up and traverse a deadly
+                         plain filled with a variety of traps, created in real-time by an all-powerful God.
+                    </p>
+                </div>
+            </div>
+            <div id="shiftQuadrant" class="quadrant subQuadrant bottomLeft">
+                <div class="gameTitleBlock">
+                    <img src="images/shift-logo.png" class="gameLogo">
+                    <div>
+                        <h3 class="gameSubTitle">2-Player Horror RPG</h3>
+                    </div>
+                </div>
+                <a target="_blank" href="http://shift-game.com" class="gameLaunchButton">Play</a>
+                <a target="_blank" href="." class="gameVideoButton">Video</a>
+                <div class="textBoxWrapper">
+                    <p class="textBox">
+                        Strategically switch between two different versions of a world, one
+                        puzzling, and one dangerous, to escape the mysterious mansion.
+                    </p>
+                </div>
+            </div>
+            <div id="polyPongQuadrant" class="quadrant subQuadrant bottomRight">
+                <div class="gameTitleBlock">
+                    <img src="images/polyPong-logo.png" class="gameLogo">
+                    <div>
+                        <h3 class="gameSubTitle">A Cooperative Variation of Pong <i>(Prototype)</i></h3>
+                    </div>
+                </div>
+                <a target="_blank" href="games/polyPong/polyPong.html" class="gameLaunchButton">Play</a>
+                <a target="_blank" href="http://www.youtube.com/watch?v=fqXbuMBxyfw" class="gameVideoButton">Video</a>
+                <div class="textBoxWrapper">
+                    <p class="textBox">
+                        Stretch your awareness, controlling two different paddles in two simultaneous games of Pong.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="topRightContent" class="quadrantContent">
+            <div class="quadrant blakeandkurtBackground topLeft">
+                <div class="textBoxWrapper">
+                    <p class="textBox">
+                        I play guitar in an acoustic folk duo with my good friend, Kurt.
+                        <a target="_blank" href="http://www.blakeandkurt.com">Visit our website</a> and listen to our music.
+                    </p>
+                </div>
+            </div>
+            <div class="quadrant bottomLeft">
+                <div id="trackQuadrantWrapper">
+                    <div id="trackHeader">
+                        <h6 class="trackTitle"></h6>
+                        <p class="trackArtist"></p>
+                        <audio id="musicPlayer" controls="controls">
+                            Your Browser doesn't support HTML5 audio.
+                            <source id="mp3_src" type="audio/mp3">
+                            <source id="ogg_src" type="audio/ogg">
+                        </audio>
+                    </div>
+                    <div id="trackList">
+                        <div id="0" class="musicTrack">
+                            <h6 class="trackTitle">Yellow (Coldplay Cover)</h6>
+                            <p class="trackArtist">Blake & Layla</p>
+                        </div>
+                        <div id="1" class="musicTrack">
+                            <h6 class="trackTitle">Stranger</h6>
+                            <p class="trackArtist">Blake & Layla</p>
+                        </div>
+                        <div id="2" class="musicTrack">
+                            <h6 class="trackTitle">Sugar</h6>
+                            <p class="trackArtist">Blake & Layla</p>
+                        </div>
+                        <div id="3" class="musicTrack">
+                            <h6 class="trackTitle">Off the Track</h6>
+                            <p class="trackArtist">Blake, Zach, Susie, & Michael</p>
+                        </div>
+                        <div id="4" class="musicTrack">
+                            <h6 class="trackTitle">SFS</h6>
+                            <p class="trackArtist">Blake</p>
+                        </div>
+                        <div id="5" class="musicTrack">
+                            <h6 class="trackTitle">Paleontology</h6>
+                            <p class="trackArtist">Matt, Kurt, & Blake</p>
+                        </div>
+                        <div id="6" class="musicTrack">
+                            <h6 class="trackTitle"><i>GodFighter</i> Game SoundTrack</h6>
+                            <p class="trackArtist">Blake</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="quadrant bottomRight">
+                <iframe src="https://www.youtube.com/embed/y2r_-ykQ1_0?rel=0&wmode=transparent&start=215"
+                        frameborder="0" class="video" allowfullscreen>
+                    Your browsers doesn't support embedded YouTube videos.
+                </iframe>
+            </div>
+        </div>
+
+        <div id="bottomLeftContent" class="quadrantContent">
+            <div id="swingGeneral" class="quadrant subQuadrant topRight">
+                <div class="textBoxWrapper">
+                    <p class="textBox">
+                        <strong>I started <a target="_blank" href="http://en.wikipedia.org/wiki/Lindy_Hop">swing dancing</a> in 2014
+                        </strong> at a place called <a target="_blank" href='http://atomicballroom.com/'>Atomic Ballroom</a>.
+                        Since then, I've regularly gone social dancing at least 3-4 nights a week, became Vice
+                        President of the <a target="_blank" href="https://www.facebook.com/groups/uciSwing/">Swing Club at UCI</a>
+                        , choreographed small routines, <a target="_blank" href="https://www.youtube.com/watch?v=go6pp2sBkW0">taught classes</a>, and
+                        travelled to Sweden for the world famous dance camp,
+                        <a target="_blank" href="https://www.herrang.com/">Herräng</a>. I've recently started competing and winning competitions.
+                    </p>
+                </div>
+            </div>
+            <div class="quadrant topLeft">
+                <iframe src="//www.youtube.com/embed/T-4lix_PRvk?rel=0&wmode=transparent"
+                        frameborder="0" class="video" allowfullscreen>
+                    Your browsers doesn't support embedded YouTube videos.
+                </iframe>
+            </div>
+            <div class="quadrant bottomRight">
+                <iframe src="//www.youtube.com/embed/IRW1eap1nm4?rel=0&wmode=transparent"
+                        frameborder="0" class="video" allowfullscreen>
+                    Your browsers doesn't support embedded YouTube videos.
+                </iframe>
+            </div>
+        </div>
+
+        <div id="bottomRightContent" class="quadrantContent">
+            <div id="aboutMeGeneral" class="quadrant subQuadrant">
+                <div class="textBoxWrapper">
+                    <p class="textBox">
+                        <strong>Hello... my name is Blake</strong> and this is my personal website.
+                        I love to create things. I make games, music, and dance Lindy Hop in my free-time.
+                        Here is where I'll be posting my latest projects. Contact me at
+                        <a target="_blank" href='mailto:blake.w.thiessen@gmail.com'>blake.w.thiessen@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+            <div id="aboutMeMusic" class="quadrant subQuadrant topRight">
+                <div class="textBoxWrapper">
+                    <p class="textBox">
+                        Ever since I discovered <a target="_blank" href='http://ericjohnson.com'>Eric Johnson</a>,
+                        I've loved playing the guitar. It's become a gateway to discovering and composing
+                        all different kinds of music. Check out my music page to hear what I've made, or
+                        go to <a target="_blank" href="http://www.blakeandkurt.com">current band's website</a> to listen to my
+                        latest projects.
+                    </p>
+                </div>
+            </div>
+            <div id="aboutMeGames" class="quadrant subQuadrant bottomLeft">
+                <div class="textBoxWrapper">
+                    <p class="textBox">
+                        I grew up playing video games since I was 4 or 5 years old. From 2003 to 2007, my dad opened a
+                        <a target="_blank" href='http://www.examiner.com/slideshow/cyberscape-arena#slide=33130501'>
+                        game center/internet cafe</a>, and as often as I could, I'd bring my
+                        friends to come play games like <a target="_blank" href='http://www.battlefield.com/battlefield-1942'>BF1942</a>,
+                        <a target="_blank" href='http://store.steampowered.com/app/240/'>Counter-Strike: Source</a>,
+                        <a target="_blank" href='http://us.blizzard.com/en-us/games/war3/'>WarCraft 3</a>, etc.
+                        Nowadays, I'll host LAN parties occasionally at college or whenever I come back home with friends and family.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="background"></div>
+        <h1 id="center">Blake Thiessen</h1>
+    </div>
+</body>
+</html>

@@ -1,0 +1,334 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'RitaSmith';
+}
+@font-face {
+    font-family: 'RitaSmith';
+    src: url('fonts/RitaSmith.otf');
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+#wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+h1, h2, p {
+    text-align: center;
+}
+h1 {
+    position: fixed;
+}
+h2 {
+    position: absolute;
+    z-index: 3;
+    -webkit-transition: color 1s, opacity 1s, left 1s, top 1s;
+    -moz-transition: color 1s, opacity 1s, left 1s, top 1s;
+    -o-transition: color 1s, opacity 1s, left 1s, top 1s;
+    -ms-transition: color 1s, opacity 1s, left 1s, top 1s;
+    transition: color 1s, opacity 1s, left 1s, top 1s;
+    cursor: pointer;
+
+    font-size: 2em;
+}
+
+.quadrant {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    border: 1px solid #000;
+}
+.subQuadrant {
+    background-color: #999;
+}
+#center {
+    width: 220px;
+    height: 40px;
+    background-color: white;
+    letter-spacing: 1px;
+    border: 3px groove black;
+    padding-left: 4px;
+    padding-right: 4px;
+    top: 50%;
+    left: 50%;
+    margin: -22px 0 0 -110px;
+    z-index: 3;
+
+    -webkit-box-shadow: 5px 5px 5px #000;
+    -o-box-shadow: 5px 5px 5px #000;
+    -ms-box-shadow: 5px 5px 5px #000;
+    box-shadow: 5px 5px 5px #000;
+
+    -webkit-transition: left 1s, top 1s, opacity 1s;
+    -moz-transition: left 1s, top 1s, opacity 1s;
+    -o-transition: left 1s, top 1s, opacity 1s;
+    -ms-transition: left 1s, top 1s, opacity 1s;
+    transition: left 1s, top 1s, opacity 1s;
+}
+
+.quadrantCover {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    z-index: 2;
+    -webkit-transition: left 1s, top 1s, width 1s, height 1s, opacity 1s;
+    -moz-transition: left 1s, top 1s, width 1s, height 1s, opacity 1s;
+    -o-transition: left 1s, top 1s, width 1s, height 1s, opacity 1s;
+    -ms-transition: left 1s, top 1s, width 1s, height 1s, opacity 1s;
+    transition: left 1s, top 1s, width 1s, height 1s, opacity 1s;
+    pointer-events: none;
+}
+
+#topLeftCover {
+    background-color: #999;
+}
+#topRightCover {
+    background-color: #AAA;
+}
+#bottomLeftCover {
+    background-color: #BBB;
+}
+#bottomRightCover {
+    background-color: #CCC;
+}
+
+#background {
+    background-image: url("images/game-Tile.png");
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.quadrantContent {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: inherit;
+}
+
+.topRight {
+    left: 50%;
+}
+.bottomLeft {
+    top: 50%;
+}
+.bottomRight {
+    left: 50%;
+    top: 50%;
+}
+#topLeftCover {}
+#topRightCover {}
+#bottomLeftCover {}
+#bottomRightCover {}
+#topLeftHeader {
+    left: 25%;
+    top: 25%;
+    margin: -17px 0 0 -41px;
+}
+#topRightHeader {
+    left: 75%;
+    top: 25%;
+    margin: -17px 0 0 -37px;
+}
+#bottomLeftHeader {
+    left: 25%;
+    top: 75%;
+    margin: -17px 0 0 -40px;
+}
+#bottomRightHeader {
+    left: 75%;
+    top: 75%;
+    margin: -17px 0 0 -51px;
+    width: 92px;
+}
+
+/* Games Quadrant */
+
+#topRightGameQuad {
+    background-image: url('images/godFighter-screenshot.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.gameTitleBlock {
+    margin: 25px;
+    height: 20%;
+}
+.gameLogo {
+    display: block;
+    height: 65%;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.gameSubTitle {
+    position: relative;
+    text-align: center;
+    top: 2px;
+    font-size: 20px;
+}
+.gameLaunchButton {
+    position: absolute;
+    background-color: rgba(200, 200, 200, .8);
+    border: 2px solid black;
+    left: 50%;
+    margin-left: -21px;
+    padding: 4px;
+    font-size: 20px;
+}
+.gameVideoButton {
+    position: relative;
+    background-color: rgba(200, 200, 200, .8);
+    border: 2px solid black;
+    left: 50%;
+    margin-left: -24px;
+    top: 60px;
+    padding: 4px;
+    font-size: 20px;
+}
+.textBoxWrapper {
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    bottom: 5%;
+}
+.textBox {
+    background-color: rgba(200, 200, 200, .6);
+    padding: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18px;
+}
+#godFighterQuadrant {
+    background-image: url(images/godFighter-screenshot.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#shiftQuadrant {
+    background-image: url(images/shift-screenshot.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#polyPongQuadrant {
+    background-image: url(images/polyPong-screenshot.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Music Quadrant */
+
+.blakeandkurtBackground {
+    background-image: url(images/blakeandkurt.png);
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.video {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    width: 90%;
+    height: 90%;
+}
+#trackQuadrantWrapper {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+}
+#trackList {
+    position: absolute;
+    width: 100%;
+    height: 75%;
+    bottom: 0%;
+    background-color: rgba(255, 255, 255, .5);
+    overflow-y: scroll;
+}
+#trackHeader {
+    color: #FFF;
+    position: absolute;
+    width: 100%;
+    height: 22%;
+}
+#musicPlayer {
+    width: 100%;
+    bottom: 0%;
+}
+
+.musicTrack {
+    cursor: pointer;
+    background-color: #DDD;
+    padding: 5px;
+    margin: 5px;
+    -webkit-transition: background-color 500ms, color 250ms;
+    -moz-transition: background-color 500ms, color 250ms;
+    -o-transition: background-color 500ms, color 250ms;
+    -ms-transition: background-color 500ms, color 250ms;
+    transition: background-color 500ms, color 250ms;
+}
+.musicTrack:hover {
+    background-color: #888;
+}
+
+.trackTitle {
+    font-size: 18px;
+}
+.trackArtist {
+    font-style: italic;
+    font-size: 16px;
+    padding: 2px;
+    text-align: left;
+}
+
+.selectedMusicTrack {
+    background-color: #000;
+    color: #FFF;
+}
+
+/* Swing Quadrant */
+#swingGeneral {
+    background-image: url(images/swingDancing.png);
+    background-position: 72% 50%;
+    background-repeat: no-repeat;
+}
+
+/* About Me Quadrant */
+
+#aboutMeGeneral {
+    background-image: url(images/blake-mePhoto.png);
+    background-position: 88% 50%;
+    background-repeat: no-repeat;
+}
+#aboutMeMusic {
+    background-image: url(images/blake-musicPhoto.png);
+    background-position: 82% 50%;
+    background-repeat: no-repeat;
+}
+#aboutMeGames {
+    background-image: url(images/blake-gamesPhoto.png);
+    background-position: 40% 50%;
+    background-repeat: no-repeat;
+}
+.fullWidthTextBoxWrapper {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+}
+.ellipseGlowTextBox {
+    text-align: center;
+    background-image: -webkit-radial-gradient(#FFF, rgba(150,150,150,.3), rgba(0,0,0,0));
+    background-image: -moz-radial-gradient(#FFF, rgba(150,150,150,.3), rgba(0,0,0,0));
+    background-image: -ms-radial-gradient(#FFF, rgba(150,150,150,.3), rgba(0,0,0,0));
+    background-image: -o-radial-gradient(#FFF, rgba(150,150,150,.3), rgba(0,0,0,0));
+    background-image: radial-gradient(#FFF, rgba(150,150,150,.3), rgba(0,0,0,0));
+    padding: 50px;
+    font-size: 18px;
+}
