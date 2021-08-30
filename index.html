@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link rel=StyleSheet href="style.css">
     <!--<script src="jquery.js"></script>-->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="scripts/quadrantAnimation.js"></script>
     <script src="scripts/colorSchemeGenerator.js"></script>
     <script src="scripts/main.js"></script>
@@ -41,8 +41,7 @@
                         <h3 class="gameSubTitle">3 vs 1 Competitive Sidescroller</h3>
                     </div>
                 </div>
-                <a target="_blank" href="games/GodFighter%2011-9-12.zip" class="gameLaunchButton" style="margin-left: -40px">Download</a>
-                <a target="_blank" href="http://www.youtube.com/watch?v=ON8ILv4s8V4" class="gameVideoButton">Video</a>
+                <a target="_blank" href="http://www.youtube.com/watch?v=ON8ILv4s8V4" class="gameLaunchButton">Video</a>
                 <div class="textBoxWrapper">
                     <p class="textBox">
                         3 Runners, each armed with unique abilities, must team up and traverse a deadly
@@ -58,7 +57,6 @@
                     </div>
                 </div>
                 <a target="_blank" href="http://shift-game.com" class="gameLaunchButton">Play</a>
-                <a target="_blank" href="." class="gameVideoButton">Video</a>
                 <div class="textBoxWrapper">
                     <p class="textBox">
                         Strategically switch between two different versions of a world, one
@@ -73,8 +71,7 @@
                         <h3 class="gameSubTitle">A Cooperative Variation of Pong <i>(Prototype)</i></h3>
                     </div>
                 </div>
-                <a target="_blank" href="games/polyPong/polyPong.html" class="gameLaunchButton">Play</a>
-                <a target="_blank" href="http://www.youtube.com/watch?v=fqXbuMBxyfw" class="gameVideoButton">Video</a>
+                <a target="_blank" href="http://www.youtube.com/watch?v=fqXbuMBxyfw" class="gameLaunchButton">Video</a>
                 <div class="textBoxWrapper">
                     <p class="textBox">
                         Stretch your awareness, controlling two different paddles in two simultaneous games of Pong.
@@ -87,7 +84,8 @@
             <div class="quadrant blakeandkurtBackground topLeft">
                 <div class="textBoxWrapper">
                     <p class="textBox">
-                        I play guitar in an acoustic folk duo with my good friend, Kurt.
+                        I've played guitar since 2004 and have written and performed with various small groups. You can listen to some selections via the mp3 player below.
+                        My latest project is an acoustic duo with my buddy Kurt.
                         <a target="_blank" href="http://www.blakeandkurt.com">Visit our website</a> and listen to our music.
                     </p>
                 </div>
@@ -95,8 +93,10 @@
             <div class="quadrant bottomLeft">
                 <div id="trackQuadrantWrapper">
                     <div id="trackHeader">
-                        <h6 class="trackTitle"></h6>
-                        <p class="trackArtist"></p>
+                        <div class="playingTrack">
+                            <h6 class="trackTitle"></h6>
+                            <p class="trackArtist"></p>
+                        </div>
                         <audio id="musicPlayer" controls="controls">
                             Your Browser doesn't support HTML5 audio.
                             <source id="mp3_src" type="audio/mp3">
@@ -136,10 +136,15 @@
                 </div>
             </div>
             <div class="quadrant bottomRight">
-                <iframe src="https://www.youtube.com/embed/y2r_-ykQ1_0?rel=0&wmode=transparent&start=215"
-                        frameborder="0" class="video" allowfullscreen>
-                    Your browsers doesn't support embedded YouTube videos.
-                </iframe>
+                <iframe src="https://www.youtube.com/embed/OxZSaBJMkBA"
+                        title="YouTube video player"
+                        frameborder="0"
+                        class="video"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!--                <iframe src="https://www.youtube.com/embed/y2r_-ykQ1_0?rel=0&wmode=transparent&start=215"-->
+<!--                        frameborder="0" class="video" allowfullscreen>-->
+<!--                    Your browsers doesn't support embedded YouTube videos.-->
+<!--                </iframe>-->
             </div>
         </div>
 
@@ -147,26 +152,31 @@
             <div id="swingGeneral" class="quadrant subQuadrant topRight">
                 <div class="textBoxWrapper">
                     <p class="textBox">
-                        <strong>I started <a target="_blank" href="http://en.wikipedia.org/wiki/Lindy_Hop">swing dancing</a> in 2014
-                        </strong> at a place called <a target="_blank" href='http://atomicballroom.com/'>Atomic Ballroom</a>.
-                        Since then, I've regularly gone social dancing at least 3-4 nights a week, became Vice
-                        President of the <a target="_blank" href="https://www.facebook.com/groups/uciSwing/">Swing Club at UCI</a>
-                        , choreographed small routines, <a target="_blank" href="https://www.youtube.com/watch?v=go6pp2sBkW0">taught classes</a>, and
-                        travelled to Sweden for the world famous dance camp,
-                        <a target="_blank" href="https://www.herrang.com/">Herräng</a>. I've recently started competing and winning competitions.
+                        When I was in high school, my European History
+                        teacher played the film <a target="_blank" href="https://youtu.be/W7CLCYnhCjA?t=26">Swing Kids</a> for the class.
+                        The exuberant, yet classy dance scenes planted the seeds
+                        for my new year's resolution 4 years later to look for
+                        classes. I've been obsessed ever since. Whether
+                        it's teaching, social dancing, competing, listening to
+                        the music, or just geeking out about it's history, I just
+                        love everything about it.
                     </p>
                 </div>
             </div>
             <div class="quadrant topLeft">
-                <iframe src="//www.youtube.com/embed/T-4lix_PRvk?rel=0&wmode=transparent"
-                        frameborder="0" class="video" allowfullscreen>
-                    Your browsers doesn't support embedded YouTube videos.
+                <iframe src="https://www.youtube.com/embed/dH1pBCL4EhY"
+                        class="video"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                 </iframe>
             </div>
             <div class="quadrant bottomRight">
-                <iframe src="//www.youtube.com/embed/IRW1eap1nm4?rel=0&wmode=transparent"
-                        frameborder="0" class="video" allowfullscreen>
-                    Your browsers doesn't support embedded YouTube videos.
+                <iframe src="https://www.youtube.com/embed/sQgrS7rHpNM"
+                        class="video"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                 </iframe>
             </div>
         </div>
@@ -175,21 +185,22 @@
             <div id="aboutMeGeneral" class="quadrant subQuadrant">
                 <div class="textBoxWrapper">
                     <p class="textBox">
-                        <strong>Hello... my name is Blake</strong> and this is my personal website.
-                        I love to create things. I make games, music, and dance Lindy Hop in my free-time.
-                        Here is where I'll be posting my latest projects. Contact me at
-                        <a target="_blank" href='mailto:blake.w.thiessen@gmail.com'>blake.w.thiessen@gmail.com</a>
+                        Hello... my name is Blake and this is my personal website.
+                        I'm a software engineer turned professional swing dance instructor, but also a gamer,
+                        game developer, guitar player, craft cocktail enthusiast, and tennis player in my free time.
+                        Reach out to me <a target="_blank" href="https://www.facebook.com/blake.thiessen/">on Facebook</a>
+                        to chat!
                     </p>
                 </div>
             </div>
-            <div id="aboutMeMusic" class="quadrant subQuadrant topRight">
+            <div id="aboutMeCocktails" class="quadrant subQuadrant topRight">
                 <div class="textBoxWrapper">
                     <p class="textBox">
-                        Ever since I discovered <a target="_blank" href='http://ericjohnson.com'>Eric Johnson</a>,
-                        I've loved playing the guitar. It's become a gateway to discovering and composing
-                        all different kinds of music. Check out my music page to hear what I've made, or
-                        go to <a target="_blank" href="http://www.blakeandkurt.com">current band's website</a> to listen to my
-                        latest projects.
+                        Ever since I read Smuggler's Cove book about tiki mixology, I've been hooked on craft
+                        cocktails and punches. While I certainly enjoy drinking them, I find it even more fulfilling
+                        to create and share them with friends. Some of my favorites include
+                        <a target="_blank" href="https://punchdrink.com/recipes/scotty-schuders-missionarys-downfall/">Scotty Schuder's Missionary's Downfall</a>
+                        and the <a target="_blank" href="https://punchdrink.com/recipes/tribute-to-the-mai-kais-black-magic/">"Tribute" to the Mai Kai Black Magic.</a>.
                     </p>
                 </div>
             </div>
@@ -197,12 +208,10 @@
                 <div class="textBoxWrapper">
                     <p class="textBox">
                         I grew up playing video games since I was 4 or 5 years old. From 2003 to 2007, my dad opened a
-                        <a target="_blank" href='http://www.examiner.com/slideshow/cyberscape-arena#slide=33130501'>
+                        <a target="_blank" href='http://cyberscapearena.com/'>
                         game center/internet cafe</a>, and as often as I could, I'd bring my
-                        friends to come play games like <a target="_blank" href='http://www.battlefield.com/battlefield-1942'>BF1942</a>,
-                        <a target="_blank" href='http://store.steampowered.com/app/240/'>Counter-Strike: Source</a>,
-                        <a target="_blank" href='http://us.blizzard.com/en-us/games/war3/'>WarCraft 3</a>, etc.
-                        Nowadays, I'll host LAN parties occasionally at college or whenever I come back home with friends and family.
+                        friends to come play games like BF1942, Counter-Strike, WarCraft III, etc.
+                        Nowadays, I'll host LAN parties occasionally, but most of my gaming is with a group of buddies in StarCraft II.
                     </p>
                 </div>
             </div>
