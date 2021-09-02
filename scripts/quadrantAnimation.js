@@ -18,14 +18,14 @@ var quadrantAnimation = (function() {
 
             $("#topRightHeader")
                 .addClass("faded")
-                .css("left", "100%");
+                .css("left", "96%");
             $("#bottomLeftHeader")
                 .addClass("faded")
-                .css("top", "100%");
+                .css("top", "98%");
             $("#bottomRightHeader")
                 .addClass("faded")
-                .css("left", "100%")
-                .css("top", "100%");
+                .css("left", "95%")
+                .css("top", "98%");
 
             $("#topLeftCover")
                 .css("opacity", "0")
@@ -34,8 +34,8 @@ var quadrantAnimation = (function() {
 
             $("#center")
                 .addClass("faded")
-                .css("left", "100%")
-                .css("top", "100%");
+                .css("left", "84%")
+                .css("top", "94%");
         },
         closeTopLeft: function() {
             $("#topRightCover")
@@ -130,6 +130,7 @@ var quadrantAnimation = (function() {
                 .css("opacity", ".5")
                 .css("height", "50%")
                 .css("left", "50%")
+                .css("width", "50%")
             $("#center")
                 .css("left", "50%")
                 .css("top", "50%");
@@ -156,10 +157,10 @@ var quadrantAnimation = (function() {
             $("#topRightHeader")
                 .addClass("faded")
                 .css("top", "0%")
-                .css("left", "100%");
+                .css("left", "96%");
             $("#bottomRightHeader")
                 .addClass("faded")
-                .css("left", "100%");
+                .css("left", "95%");
 
             $("#bottomLeftCover")
                 .css("opacity", "0")

@@ -41,7 +41,7 @@ h2 {
     position: absolute;
     width: 50%;
     height: 50%;
-    border: 1px solid #000;
+    /*border: 1px solid #000;*/
 }
 .subQuadrant {
     background-color: #999;
@@ -163,8 +163,8 @@ h2 {
 }
 .gameLogo {
     display: block;
-    height: 65%;
-    width: auto;
+    max-height: 65%;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
